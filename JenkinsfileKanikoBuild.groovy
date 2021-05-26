@@ -3,7 +3,7 @@ pipeline {
         kubernetes {
           //label 'qa-automation-runner'
           defaultContainer 'kaniko'
-          yamlFile 'kaniko-build.yaml'
+          yamlFile 'kaniko-git.yaml'
         }
       }
   stages {

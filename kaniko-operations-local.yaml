@@ -12,7 +12,7 @@ spec:
   - name: kaniko
     image: gcr.io/kaniko-project/executor:debug
     args: ["--verbosity=trace","--dockerfile=./Dockerfile", "--context=git://github.com/RobertoFlores/kaniko-demo.git#refs/heads/master",
-            "--destination=robertrevolver/playground:6.0.0"]
+            "--destination=robertrevolver/playground:7.0.0"]
     volumeMounts:
       - name: kaniko-secret
         mountPath: /kaniko/.docker

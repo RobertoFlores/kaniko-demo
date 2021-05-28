@@ -20,7 +20,8 @@ spec:
         mountPath: /kaniko/.docker
   volumes:
     - name: kaniko-secret
-      secretName: regcred-playground
-      items:
-        - key: .dockerconfigjson
-          path: config.json
+      secret:
+        secretName: regcred-playground
+        items:
+          - key: .dockerconfigjson
+            path: config.json

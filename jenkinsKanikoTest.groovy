@@ -12,7 +12,7 @@ pipeline {
           script {
             sh "echo kaniko build is running"
             sh "ls -la"           
-            sh "/kaniko/executor --dockerfile `pwd`/Dockerfile --context `pwd` --destination=robertrevolver/kaniko-test:0.0.1"
+            sh "/kaniko/executor --dockerfile `pwd`/Dockerfile --context `pwd` --destination=robertrevolver/playground:6.0.0"
         } //container
       } //steps
     } //stage(build)
